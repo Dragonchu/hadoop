@@ -1,0 +1,12 @@
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV LC_ALL=C.UTF-8
+
+RUN apt-get update
+RUN apt-get -y install openjdk-8-jdk \
+    maven \
+    build-essential autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev libsasl2-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64

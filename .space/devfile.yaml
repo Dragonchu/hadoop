@@ -5,10 +5,8 @@ attributes:
     editor:
       type: Idea
 components:
-  - name: image-build
+  - name: hadoop-dev
     image:
-    # (Required)
-    imageName: my-image:latest
-    dockerfile:
-      # (Required) path to Dockerfile relative to projectRoot
-      uri: dev-support/docker/Dockerfile
+      imageName: hadoop-dev:latest
+      dockerfile:
+        uri: dev-support/docker/Dockerfile_dragonchu
