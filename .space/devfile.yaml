@@ -1,0 +1,14 @@
+schemaVersion: 2.2.0
+attributes:
+  space:
+    instanceType: large
+    editor:
+      type: Idea
+components:
+  - name: image-build
+    image:
+    # (Required)
+    imageName: my-image:latest
+    dockerfile:
+      # (Required) path to Dockerfile relative to projectRoot
+      uri: dev-support/docker/Dockerfile
